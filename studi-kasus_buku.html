@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color:gainsboro;
+            border: 3px solid antiquewhite;
+        }
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1300px;
+            margin-top: 20px;
+        }
+        .header {
+            background-color: crimson;
+            display: flex;
+        }
+        .header-logo img {
+            height: 60px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .header-title>a {
+            font-weight: bold;
+            font-size: 30px;
+            text-decoration: none;
+            color: black;
+            margin-left: 0px;
+            text-transform: capitalize;
+        }
+        .header-title {
+            margin-top: auto;
+            margin-bottom: auto;    
+        }
+        .nav-item > a {
+            text-decoration: none;
+            color: cornsilk;
+        }
+        .nav-item {
+            display: inline-block;
+            margin: 2px 0px 2px 20px;
+        }
+        .nav {
+            background-color: black;
+            padding: 6px;
+            margin-top: 0px;
+            border-bottom: 8px solid #bdbdbd;
+            border-top: 8px solid #bdbdbd;
+        }
+        .nav-item:hover {
+            background-color: cornflowerblue;
+            padding: 5px;
+            border-radius: 2px;
+            transition:all .3s ease-in-out ;
+        }
+        .nav-item:active {
+            background-color: blue;
+            border-radius: 2px;
+        }
+        .content {
+            margin-left: 80px;
+        }
+        /* styling content */
+        .content>h1 {
+            color: green;
+            text-shadow: 2px 2px 2px greenyellow;
+            margin-top: 0;
+        }
+        /* tabel */
+        .tabel {
+            width: 1000px;
+            border-spacing: 4px;
+            margin-bottom: 100px;
+        }
+        td>img {
+            width: 100px;
+        }
+        .tabel-header {
+            background-color: cornflowerblue;
+        }
+        .tabel-header>th {
+            padding: 3px;
+            text-align: left;
+        }
+        .tabel-konten {
+            background-color:azure ;
+        }
+        .tabel-konten>td {
+            padding: 10px;
+        }
+        .tabel-konten.genap {
+            background-color:aliceblue;
+        }
+        .tabel-konten:hover {
+            background-color: coral;
+        }
+        .tabel-konten:active {
+            background-color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <!-- header -->
+    <div class="header">
+        <div class="header-logo">
+            <img src="logo kabupaten pati.png" alt="logo daerah pati">
+        </div>
+        <div class="header-title">
+           <a href="#">Perpustakaan Daerah kabupaten pati</a> 
+        </div>
+    </div>
+    <!-- Navbar -->
+        <ul class="nav">
+            <li class="nav-item">
+                <a href="studi_kasus.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+                <a href="studi-kasus_buku.html">Buku</a>
+            </li>
+            <li class="nav-item">
+                <a href="studi-kasus_kontak.html">Kontak</a>
+            </li>
+        </ul>
+    <!-- konten -->
+    <div class="content">
+        <h1>Daftar Buku</h1> 
+
+        <table class="tabel">
+            <tr class="tabel-header">
+                <th>No</th>
+                <th>Cover</th>
+                <th>Judul</th>
+                <th>Penulis</th>
+                <th>Status</th>
+            </tr>
+            <tr class="tabel-konten">
+                <td>1</td>
+                <td>
+                    <img src="cover_1.jpg">
+                </td>
+                <td>My Web</td>
+                <td>Faizuddin</td>
+                <td>Dipinjam</td>
+            </tr>
+            <tr class="tabel-konten genap">
+                <td>2</td>
+                <td>
+                    <img src="cover-2.png">
+                </td>
+                <td>Buku Inspirasi</td>
+                <td>Naisya Nara</td>
+                <td>Tersedia</td>
+            </tr>
+            <tr class="tabel-konten">
+                <td>3</td>
+                <td>
+                    <img src="cover-3.jpeg">
+                </td>
+                <td>Dune</td>
+                <td>Fatta Zhuga</td>
+                <td>Tersedia</td>
+            </tr>
+            <tr class="tabel-konten genap">
+                <td>4</td>
+                <td>
+                    <img src="cover-4.jpeg">
+                </td>
+                <td>Dilan 1990</td>
+                <td>Rafa Al-Fahruf</td>
+                <td>Dipinjam</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>

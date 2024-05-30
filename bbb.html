@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            background-color: #6495ed;
+            color: cornsilk; 
+            width: 300px;           
+            display: flex;
+            margin-left:auto ;
+            margin-right:auto ;
+            padding-left:80px; 
+            border: 2px solid #bdbdbd;
+            border-radius: 15px;
+        }
+        .header-logo>img {
+            height: 100px;
+        }
+        .header-logo {
+            margin-left: 20px;
+        }
+        .header {
+            display: flex;
+            background-color: cadetblue;
+            height: 100px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .header-judul {
+            margin-top:auto ;
+            margin-bottom: auto;
+            margin-left: 20px;
+        }
+        .header-judul>a {
+            font-size: 28px;
+            text-decoration: none;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            color:rgb(205, 395,100);
+        }
+        .nav-item>a {
+            text-decoration: none;
+            font-size: 18px;
+            margin: 10px;
+            color: cornsilk;
+        }
+        .nav>li {
+            list-style-type: none;
+            display: inline-block;
+        }
+        .nav-item:hover {
+            background-color: cornflowerblue;
+            border-radius: 5px;
+            transition: all .3s ease-in-out;
+        }
+        .nav-item:active {
+            background-color: coral;
+            border-radius: 5px;
+            padding: 4px;
+        }
+
+        .nav {
+            background-color: black;
+            margin-top: 0;
+            padding: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Relative Position</h1>
+    <div class="header">
+        <div class="header-logo">
+            <img src="/form/image/Internet.png">
+        </div>
+        <div class="header-judul">
+            <a href="#">Jaringan Internet Kabupaten Pati</a>
+        </div>
+    </div>
+    <ul class="nav">
+        <li class="nav-item">
+            <a href="">Home</a>
+        </li>
+        <li class="nav-item">
+            <a href="">Menu</a>
+        </li>
+        <li class="nav-item">
+            <a href="">Tools</a>
+        </li>
+    </ul>
+</body>
+</html>

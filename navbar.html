@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fContainer {
+            display: flex;
+            justify-content: space-between;
+            background-color:black ;
+            height: 65px;
+            max-width: 1300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .firstname {
+            color: white;
+            font-weight:700;
+        }
+        .lastname {
+            color: crimson;
+            font-weight:400;
+        }
+        .brand {
+            display: flex;
+            margin-top: auto;
+            margin-bottom: auto;
+            flex-direction: row;
+            font-family: Roboto,sans-serif;
+            font-size: 1.5em;
+            text-transform: capitalize;
+            margin-left: 15px;
+        }
+        .nav-item>a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        .wrapper>li {
+            list-style-type: none;
+        }
+        ul.wrapper {
+            display: flex;
+        }
+        .navigation {
+            display: flex;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+        .navigation>img {
+            height: 30px;
+            margin-top: 10px;
+            margin-right: 8px;
+        }
+        li.nav-item:hover {
+            background-color: crimson;
+            transition: all .3s ease-in-out;
+            border-radius: 5px
+        }
+    </style>
+</head>
+<body>
+    <div class="fContainer">
+        <div class="brand">
+            <div class="firstname">Crypto</div>
+            <div class="lastname">punk</div>
+        </div>
+        <nav class="navigation">
+            <ul class="wrapper">
+                <li class="nav-item">
+                    <a href="#">Koleksi</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Transaksi</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Aktivitas</a>
+                </li>
+            </ul>
+                <img src="/form/image/Twitter.png">
+        </nav>
+    </div>
+</body>
+</html>
